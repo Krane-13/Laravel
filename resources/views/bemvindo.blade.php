@@ -8,10 +8,10 @@
 </head>
 <body>
 
-    {{--<h1>Bem-vindo, {{$apelido_nome}}</h1>
+    <h1>Bem-vindo, {{$apelido_nome}}</h1>
      <h2>Sobrenome: {{$sobrenome}}</h2>
     <h2>Idade: {{$idade}}</h2>
-    <h2>Aniversario: {{$aniver}}</h2> --}}
+    <h2>Aniversario: {{$aniver}}</h2>
 
     {{-- BLADE --}}
     {{-- <h2> 1+1 é: {{1+1}}</h2>
@@ -60,7 +60,7 @@
             Deletar
         @endcomponent
         </p>
-    @endforeach --}}
+    @endforeach
 
     {{-- EXE1 --}}
 
@@ -68,9 +68,9 @@
     display:flex;
     flex-direction:row"
 >
-    @foreach($pessoas as $p)
+    {{-- @foreach($pessoas as $p)
 
-        {{-- @component('components.avatar')
+        @component('components.avatar')
             @slot('image')
                 {{$p['image']}}
             @endslot
@@ -83,11 +83,11 @@
             @slot('birth')
                 {{$p['birth']}}
             @endslot
-        @endcomponent --}}
+        @endcomponent
 
         @include('components.avatar', $p)
 
-    @endforeach
+    @endforeach --}}
 
 
 </body>
